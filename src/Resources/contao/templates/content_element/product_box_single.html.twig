@@ -1,0 +1,48 @@
+{% import "@ContaoCore/Image/Studio/_macros.html.twig" as studio %}
+
+{% set wrapperattributes = attrs(div_attributes|default)
+    .setIfExists("id", ID)
+    .addClass(['product-box', CLASS])
+%}
+{% set contentattributes = attrs(div_attributes|default)
+    .addClass('product-box-content')
+%}
+{% set contentinnerattributes = attrs(div_attributes|default)
+    .addClass('product-box-content-inner')
+%}
+
+<div{{wrapperattributes}}>
+  {% if addLink %}
+      {% set linkattributes = attrs(link_attributes|default)
+        .set('href', data.url|insert_tag, data.url)
+        .set('title', data.titleText, data.titleText)
+        .set('target', '_blank', data.target)
+        .set('rel', 'noopener', data.target)
+    %}
+    <a{{linkattributes}}>
+  {% endif %}
+    {% if addImage %}
+      {% set imageattributes = attrs(div_attributes|default)
+        .addClass('product-box-image')
+      %}
+      <div{{imageattributes}}> 
+        {{ studio.figure(image) }}
+      </div>
+    {% endif %}
+    <div{{contentattributes}}>
+      <div{{contentinnerattributes}}>
+        {% if headline %}
+        {% set headlineattributes = attrs(div_attributes|default)
+          .addClass('headline')
+        %}
+          <{{ h1 }}{{headlineattributes}}>{{ headline }}</{{ h1 }}>
+        {% endif %}
+        {{ text|raw|insert_tag }}
+      </div>
+    </div>
+      {% if addLink %}
+  </a>
+  {% endif %}
+  </a>
+</div>
+

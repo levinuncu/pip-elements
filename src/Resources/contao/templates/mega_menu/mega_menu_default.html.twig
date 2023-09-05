@@ -1,0 +1,12 @@
+{% set sectionAttributes = attrs(div_attributes|default)
+  .addClass("dropdown")
+%}
+
+{% block mega_menu %}
+  <div{{sectionAttributes}}>
+    <div class="dropdown-inner">
+      {{ content|raw|insert_tag }}
+    </div>
+  </div>
+{% endblock %}
+

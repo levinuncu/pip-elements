@@ -1,0 +1,79 @@
+@use 'sass:math';
+
+$gaps: 16, 32, 48, 64;
+$overlays: 40, 60, 80;
+
+@function torem($value) {
+  $rem-value: math.div($value, 16) + rem;
+  @return $rem-value;
+}
+%content-box-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.content-box {
+  background-color: var(--bc);
+  position: relative;
+  @each $gap in $gaps {
+    &.pt-#{$gap} {
+      padding-top: torem($gap);
+    }
+    &.pb-#{$gap} {
+      padding-bottom: torem($gap);
+    }
+    &.mt-#{$gap} {
+      margin-top: #{$gap}px;
+    }
+    &.mb-#{$gap} {
+      margin-bottom: #{$gap}px;
+    }
+  }
+  &-background {
+    &-image {
+      @extend %content-box-background;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      &.parallax {
+        background-attachment: fixed;
+      }
+    }
+    &-overlay {
+      @extend %content-box-background;
+      background-color: #000000;
+      @each $overlay in $overlays {
+        &.overlay-#{$overlay} {
+          opacity: calc($overlay / 100);
+        }
+      }
+    }
+  }
+  &-inner {
+    position: relative;
+    &.contrast {
+      color: #ffffff;
+    }
+    &.centered {
+      width: 75rem;
+      margin: 0 auto;
+      @media (max-width: 80rem) {
+        width: 100%;
+        padding-right: torem(40);
+        padding-left: torem(40);
+      }
+      @media (max-width: 500px) {
+        padding-right: torem(20);
+        padding-left: torem(20);
+      }
+    }
+    &.center {
+      text-align: center;
+    }
+    &.right {
+      text-align: right;
+    }
+  }
+}
