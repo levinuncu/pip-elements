@@ -24,7 +24,7 @@
     }
   }
   &-image {
-    border-bottom: 1px solid #e2197a;
+    border-bottom: 1px solid var(--primary-color); // #e2197a
     figure {
       display: flex;
       justify-content: center;

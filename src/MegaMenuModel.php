@@ -1,6 +1,6 @@
 <?php
 
-namespace PiP\ContaoElementsBundle;
+namespace PiP\PiPElementsBundle;
 
 use Contao\Model;
 use Contao\FrontendTemplate;

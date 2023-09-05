@@ -3,7 +3,7 @@ services:
     autoconfigure: true
     autowire: true
 
-  PiP\ContaoElementsBundle\Controller\ContentElement\ContentBoxStart: ~
-  PiP\ContaoElementsBundle\Controller\ContentElement\ContentBoxStop: ~
-  PiP\ContaoElementsBundle\Controller\ContentElement\ProductBox:
+  PiP\PiPElementsBundle\Controller\ContentElement\ContentBoxStart: ~
+  PiP\PiPElementsBundle\Controller\ContentElement\ContentBoxStop: ~
+  PiP\PiPElementsBundle\Controller\ContentElement\ProductBox:
     arguments: ['@Contao\CoreBundle\Image\Studio\Studio']

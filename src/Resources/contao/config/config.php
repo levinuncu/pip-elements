@@ -1,8 +1,8 @@
 <?php
 
-use PiP\ContaoElementsBundle\MegaMenuModel;
+use PiP\PiPElementsBundle\MegaMenuModel;
 
-$GLOBALS['TL_CSS'][] = 'bundles/contaoelements/css/main.css|static';
+$GLOBALS['TL_CSS'][] = 'bundles/pipelements/css/main.css|static';
 
 $GLOBALS['TL_MODELS']['tl_mega_menu'] = MegaMenuModel::class;
 $GLOBALS['BE_MOD']['design']['mega_menu'] = [

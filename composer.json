@@ -1,5 +1,5 @@
 {
-  "name": "prettyinprint/contao-elements",
+  "name": "prettyinprint/pip-elements",
   "type": "contao-bundle",
   "license": "MIT",
   "authors": [
@@ -15,10 +15,10 @@
   },
   "autoload": {
     "psr-4": {
-      "PiP\\ContaoElementsBundle\\": "src/"
+      "PiP\\PiPElementsBundle\\": "src/"
     }
   },
   "extra": {
-    "contao-manager-plugin": "PiP\\ContaoElementsBundle\\ContaoManager\\Plugin"
+    "contao-manager-plugin": "PiP\\PiPElementsBundle\\ContaoManager\\Plugin"
   }
 }

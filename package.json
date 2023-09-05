@@ -1,5 +1,5 @@
 {
-  "name": "contao-elements",
+  "name": "pip-elements",
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "esbuild": "^0.19.2",

@@ -1,6 +1,6 @@
 <?php
 
-namespace PiP\ContaoElementsBundle\Controller\ContentElement;
+namespace PiP\PiPElementsBundle\Controller\ContentElement;
 
 use Contao\ContentModel;
 use Contao\BackendTemplate;
