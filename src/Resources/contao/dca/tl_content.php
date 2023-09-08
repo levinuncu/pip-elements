@@ -135,7 +135,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['content_box_background_color'] = [
     'inputType' => 'select',
     'options' => [
         'ffffff' => '-',
-        'eeeeee' => 'hellgrau',
+        'ececec' => 'hellgrau',
         '252525' => 'grau',
         '0d5289' => 'blau',
     ],
