@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
- * @ContentElement("content_box_start", category="content_box")
+ * @ContentElement("start", category="content_box")
  */
 class ContentBoxStart extends AbstractContentElementController
 {

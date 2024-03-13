@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
- * @ContentElement("content_box_stop", category="content_box")
+ * @ContentElement("stop", category="content_box")
  */
 class ContentBoxStop extends AbstractContentElementController
 {
