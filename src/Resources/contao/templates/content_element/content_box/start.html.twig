@@ -1,11 +1,11 @@
 {% set sectionAttributes = attrs(div_attributes|default)
   .setIfExists("id", element_html_id)
   .addClass([
-    "content-box", 
-    element_css_classes, 
-    data.content_box_properties_mt, 
-    data.content_box_properties_mb, 
-    data.content_box_properties_pt, 
+    "content-box",
+    element_css_classes,
+    data.content_box_properties_mt,
+    data.content_box_properties_mb,
+    data.content_box_properties_pt,
     data.content_box_properties_pb
   ])
   .set('style', backgroundColor)
@@ -31,4 +31,4 @@
     {% endif %}
     </div>
   {% endif %}
-  <div{{innerAttributes}}> 
+  <div{{innerAttributes}}>
