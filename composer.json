@@ -20,5 +20,11 @@
   },
   "extra": {
     "contao-manager-plugin": "PiP\\PiPElementsBundle\\ContaoManager\\Plugin"
+  },
+  "config": {
+    "allow-plugins": {
+      "contao-components/installer": true,
+      "php-http/discovery": true
+    }
   }
 }
