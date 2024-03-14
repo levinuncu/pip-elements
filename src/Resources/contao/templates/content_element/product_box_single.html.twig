@@ -14,10 +14,10 @@
 <div{{wrapperattributes}}>
   {% if addLink %}
       {% set linkattributes = attrs(link_attributes|default)
-        .set('href', data.url|insert_tag, data.url)
-        .set('title', data.titleText, data.titleText)
-        .set('target', '_blank', data.target)
-        .set('rel', 'noopener', data.target)
+        .set('href', url|insert_tag, url)
+        .set('title', titleText, titleText)
+        .set('target', '_blank', target)
+        .set('rel', 'noopener', target)
     %}
     <a{{linkattributes}}>
   {% endif %}
@@ -25,7 +25,7 @@
       {% set imageattributes = attrs(div_attributes|default)
         .addClass('product-box-image')
       %}
-      <div{{imageattributes}}> 
+      <div{{imageattributes}}>
         {{ studio.figure(image) }}
       </div>
     {% endif %}
@@ -45,4 +45,3 @@
   {% endif %}
   </a>
 </div>
-

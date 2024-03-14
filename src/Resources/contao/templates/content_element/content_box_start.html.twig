@@ -1,29 +1,27 @@
 {% set sectionAttributes = attrs(div_attributes|default)
-  .setIfExists("id", element_html_id)
   .addClass([
     "content-box",
-    element_css_classes,
-    data.content_box_properties_mt,
-    data.content_box_properties_mb,
-    data.content_box_properties_pt,
-    data.content_box_properties_pb
+    content_box_properties_mt,
+    content_box_properties_mb,
+    content_box_properties_pt,
+    content_box_properties_pb
   ])
   .set('style', backgroundColor)
 %}
 {% set innerAttributes = attrs(div_attributes|default)
-    .addClass(["content-box-inner", data.content_box_properties_width])
-    .addClass("contrast", data.content_box_content_color_inverted)
-    .addClass(data.content_box_content_text_align)
+    .addClass(["content-box-inner", content_box_properties_width])
+    .addClass("contrast", content_box_content_color_inverted)
+    .addClass(content_box_content_text_align)
 %}
-<section{{sectionAttributes}}>
-  {% if data.addContentBoxImage %}
+<section{{sectionAttributes}} {{cssID}}>
+  {% if addContentBoxImage %}
     {% set backgroundImageAttributes = attrs(div_attributes|default)
         .addClass("content-box-background-image")
-        .addClass('parallax', data.content_box_background_parallax)
+        .addClass('parallax', content_box_background_parallax)
         .set('style', 'background-image:url(' ~ backgroundImagePath ~ ')', backgroundImagePath)
     %}
     <div{{backgroundImageAttributes}}>
-    {% if data.content_box_background_overlay %}
+    {% if content_box_background_overlay %}
       {% set backgroundOverlayAttributes = attrs(div_attributes|default)
         .addClass("content-box-background-overlay")
       %}
