@@ -8,9 +8,9 @@ $GLOBALS["TL_LANG"]["CTE"]["product_box_single"][1] =
     "Erzeugt ein einzelnes Produkt Box Element.";
 
 $GLOBALS["TL_LANG"]["CTE"]["content_box"] = "Content Box";
-$GLOBALS["TL_LANG"]["CTE"]["start"][0] = "Umschlag Anfang";
-$GLOBALS["TL_LANG"]["CTE"]["start"][1] =
+$GLOBALS["TL_LANG"]["CTE"]["content_box_start"][0] = "Umschlag Anfang";
+$GLOBALS["TL_LANG"]["CTE"]["content_box_start"][1] =
     "Erzeugt den öffnenden Teil der ContentBox.";
-$GLOBALS["TL_LANG"]["CTE"]["stop"][0] = "Umschlag Ende";
-$GLOBALS["TL_LANG"]["CTE"]["stop"][1] =
+$GLOBALS["TL_LANG"]["CTE"]["content_box_stop"][0] = "Umschlag Ende";
+$GLOBALS["TL_LANG"]["CTE"]["content_box_stop"][1] =
     "Erzeugt den schließenden Teil der ContentBox.";

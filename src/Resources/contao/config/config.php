@@ -9,5 +9,5 @@ $GLOBALS["BE_MOD"]["design"]["mega_menu"] = [
     "tables" => ["tl_mega_menu", "tl_content"],
 ];
 
-$GLOBALS["TL_WRAPPERS"]["start"][] = "start";
-$GLOBALS["TL_WRAPPERS"]["stop"][] = "stop";
+$GLOBALS["TL_WRAPPERS"]["start"][] = "content_box_start";
+$GLOBALS["TL_WRAPPERS"]["stop"][] = "content_box_stop";

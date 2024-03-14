@@ -38,7 +38,7 @@ $GLOBALS["TL_DCA"]["tl_content"]["fields"]["addGlobalLink"] = [
 ];
 
 // Content Box Start
-$GLOBALS["TL_DCA"]["tl_content"]["palettes"]["start"] = '
+$GLOBALS["TL_DCA"]["tl_content"]["palettes"]["content_box_start"] = '
     {type_legend},type;
     {content_box_properties},content_box_properties_width,content_box_properties_pt,content_box_properties_pb,content_box_properties_mt,content_box_properties_mb;
     {content_box_background},content_box_background_color,content_box_background_color_custom,addContentBoxImage;
@@ -237,7 +237,7 @@ $GLOBALS["TL_DCA"]["tl_content"]["fields"]["content_box_content_text_align"] = [
 
 // Content Box Stop
 
-$GLOBALS["TL_DCA"]["tl_content"]["palettes"]["stop"] = '
+$GLOBALS["TL_DCA"]["tl_content"]["palettes"]["content_box_stop"] = '
     {type_legend},type;
     {invisible_legend:hide},invisible,start,stop;
 ';
