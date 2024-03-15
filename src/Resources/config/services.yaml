@@ -3,6 +3,7 @@ services:
     autoconfigure: true
     autowire: true
 
+  PiP\PiPElementsBundle\EventListener\DataContainer\Content: ~
   PiP\PiPElementsBundle\Controller\ContentElement\ContentBoxStart: ~
   PiP\PiPElementsBundle\Controller\ContentElement\ContentBoxStop: ~
   PiP\PiPElementsBundle\Controller\ContentElement\ProductBox:
