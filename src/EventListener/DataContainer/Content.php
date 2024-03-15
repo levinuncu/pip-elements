@@ -6,7 +6,11 @@ use Contao\ContentModel;
 use Contao\Database;
 use Contao\DataContainer;
 use Contao\Input;
+use Contao\CoreBundle\ServiceAnnotation\Callback;
 
+/**
+ * @Callback(table="tl_content", target="config.onsubmit")
+ */
 final class Content
 {
     public function __invoke(DataContainer $dc)
