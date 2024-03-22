@@ -24,6 +24,7 @@
     {% if content_box_background_overlay %}
       {% set backgroundOverlayAttributes = attrs(div_attributes|default)
         .addClass("content-box-background-overlay")
+        .addClass(content_box_background_overlay)
       %}
       <div{{backgroundOverlayAttributes}}></div>
     {% endif %}
