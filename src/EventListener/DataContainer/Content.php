@@ -55,7 +55,7 @@ final class Content
             return true;
         }
 
-        if ("content_box_end" !== $row["type"]) {
+        if ("content_box_stop" !== $row["type"]) {
             return true;
         }
 
