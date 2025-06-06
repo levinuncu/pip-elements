@@ -84,7 +84,7 @@ $GLOBALS["TL_DCA"]["tl_content"]["fields"]["content_box_properties_pt"] = [
     ],
     "sql" => [
         "type" => "string",
-        "length" => 5,
+        "length" => 6,
         "default" => "",
     ],
     "eval" => ["tl_class" => "clr w50"],
@@ -103,7 +103,7 @@ $GLOBALS["TL_DCA"]["tl_content"]["fields"]["content_box_properties_pb"] = [
     ],
     "sql" => [
         "type" => "string",
-        "length" => 5,
+        "length" => 6,
         "default" => "",
     ],
     "eval" => ["tl_class" => "w50"],
@@ -122,7 +122,7 @@ $GLOBALS["TL_DCA"]["tl_content"]["fields"]["content_box_properties_mt"] = [
     ],
     "sql" => [
         "type" => "string",
-        "length" => 5,
+        "length" => 6,
         "default" => "",
     ],
     "eval" => ["tl_class" => "w50"],
@@ -141,7 +141,7 @@ $GLOBALS["TL_DCA"]["tl_content"]["fields"]["content_box_properties_mb"] = [
     ],
     "sql" => [
         "type" => "string",
-        "length" => 5,
+        "length" => 6,
         "default" => "",
     ],
     "eval" => ["tl_class" => "w50"],
