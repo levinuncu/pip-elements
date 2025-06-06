@@ -8,9 +8,5 @@
   },
   "browserslist": [
     "last 4 versions"
-  ],
-  "dependencies": {
-    "esbuild-plugin-vue3": "^0.3.2",
-    "vue": "^3.3.4"
-  }
+  ]
 }

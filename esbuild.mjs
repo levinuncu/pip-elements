@@ -2,7 +2,6 @@ import * as esbuild from "esbuild";
 import { sassPlugin } from "esbuild-sass-plugin";
 import postcss from "postcss";
 import autoprefixer from "autoprefixer";
-import vuePlugin from "esbuild-plugin-vue3";
 
 await esbuild.build({
   entryPoints: ["./assets/styles/main.scss"],
@@ -17,14 +16,3 @@ await esbuild.build({
     }),
   ],
 });
-
-// await esbuild.build({
-//   entryPoints: ["./assets/vue/**"],
-//   outdir: "src/Resources/public/vue",
-//   minify: true,
-//   bundle: true,
-//   splitting: true,
-//   format: "esm",
-//   chunkNames: "LOL",
-//   plugins: [vuePlugin()],
-// });
