@@ -79,6 +79,8 @@ $GLOBALS["TL_DCA"]["tl_content"]["fields"]["content_box_properties_pt"] = [
         "pt-32" => "32px",
         "pt-48" => "48px",
         "pt-64" => "64px",
+        "pt-96" => "96px",
+        "pt-128" => "128px",
     ],
     "sql" => [
         "type" => "string",
@@ -96,6 +98,8 @@ $GLOBALS["TL_DCA"]["tl_content"]["fields"]["content_box_properties_pb"] = [
         "pb-32" => "32px",
         "pb-48" => "48px",
         "pb-64" => "64px",
+        "pb-96" => "96px",
+        "pb-128" => "128px",
     ],
     "sql" => [
         "type" => "string",
@@ -113,6 +117,8 @@ $GLOBALS["TL_DCA"]["tl_content"]["fields"]["content_box_properties_mt"] = [
         "mt-32" => "32px",
         "mt-48" => "48px",
         "mt-64" => "64px",
+        "mt-96" => "96px",
+        "mt-128" => "128px",
     ],
     "sql" => [
         "type" => "string",
@@ -130,6 +136,8 @@ $GLOBALS["TL_DCA"]["tl_content"]["fields"]["content_box_properties_mb"] = [
         "mb-32" => "32px",
         "mb-48" => "48px",
         "mb-64" => "64px",
+        "mb-96" => "96px",
+        "mb-128" => "128px",
     ],
     "sql" => [
         "type" => "string",

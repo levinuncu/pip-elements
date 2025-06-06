@@ -1,6 +1,6 @@
-@use 'sass:math';
+@use "sass:math";
 
-$gaps: 16, 32, 48, 64;
+$gaps: 16, 32, 48, 64, 96, 128;
 $overlays: 40, 60, 80;
 
 @function torem($value) {
