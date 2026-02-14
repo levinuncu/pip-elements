@@ -2,7 +2,7 @@
   "name": "pip-elements",
   "devDependencies": {
     "autoprefixer": "^10.4.13",
-    "esbuild": "^0.19.2",
+    "esbuild": "^0.25.0",
     "esbuild-sass-plugin": "^2.14.0",
     "postcss": "^8.4.21"
   },
